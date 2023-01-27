@@ -1,4 +1,5 @@
 import { useWorkoutsContext } from '../hooks/useWorkoutsContext';
+import { MdOutlineDelete } from 'react-icons/md';
 
 function WorkoutDetails({ workout }) {
   const { dispatch } = useWorkoutsContext()
@@ -19,7 +20,7 @@ function WorkoutDetails({ workout }) {
     <p><strong>Load(kg): </strong>{workout.load}</p>
     <p><strong>Reps: </strong>{workout.reps}</p>
     <p>{workout.createdAt}</p>
-    <span onClick={handleClick}>Delete</span>
+    <span onClick={handleClick}><MdOutlineDelete /></span>
   </div>
 }
 

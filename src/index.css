@@ -62,9 +62,18 @@ header a {
   right: 20px;
   cursor: pointer;
   background: #f1f1f1;
-  padding: 6px;
+  padding: 3px;
   border-radius: 50%;
   color: #333;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workout-details span:hover {
+  box-shadow: 0 12px 20px -12px rgb(0 0 0 / 35%);
 }
 
 /* new workout form */
